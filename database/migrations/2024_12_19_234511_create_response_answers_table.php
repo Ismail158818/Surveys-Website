@@ -11,20 +11,19 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('questions', function (Blueprint $table) {
+        Schema::create('response_answers', function (Blueprint $table) {
             $table->id();
+            $table->string('answer_text')->nullable();
+            $table->foreignId('response_id')->constrained('responses')->onDelete('cascade');
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->foreignId('survey_id')->constrained('surveys')->onDelete('cascade');
-            $table->string('question_text');
+            $table->foreignId('answer_id')->nullable()->constrained('answers')->onDelete('cascade');
             $table->timestamps();
         });
-        
     }
-
-    /**
-     * Reverse the migrations.
-     */
+    
     public function down(): void
     {
-        Schema::dropIfExists('questions');
+        Schema::dropIfExists('response_answers');
     }
 };

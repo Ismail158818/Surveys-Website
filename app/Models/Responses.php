@@ -12,4 +12,8 @@ class Responses extends Model
     {
         return $this->hasMany(ResponseAnswer::class);
     }
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

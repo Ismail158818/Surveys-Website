@@ -156,7 +156,7 @@
             cursor: pointer;
             border-radius: 5px;
             font-size: 18px;
-            width: 38%; /* يجعل الزر بعرض الحاوية */
+            width: 38%; 
             transition: background-color 0.3s ease;
         }
 

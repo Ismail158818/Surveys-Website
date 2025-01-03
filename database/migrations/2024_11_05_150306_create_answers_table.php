@@ -11,14 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('answers', function (Blueprint $table) {
-            $table->id();
-            $table->unsignedBigInteger('question_id');
-            $table->string('answer_text');
-            $table->timestamps();
-        
-            $table->foreign('question_id')->references('id')->on('questions')->onDelete('cascade');
-        });
+    Schema::create('answers', function (Blueprint $table) {
+        $table->id();
+        $table->foreignId('question_id')->constrained('questions')->onDelete('cascade');
+        $table->text('answer_text')->nullable();
+        $table->timestamps();
+    });
         
     }
 
