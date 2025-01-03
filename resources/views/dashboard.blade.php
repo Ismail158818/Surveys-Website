@@ -257,7 +257,7 @@
                             <a href="https://github.com/Ismail158818" target="_blank">Ismail Mahmoud Basbous</a>
                             <a href="https://github.com/simaaziz888" target="_blank">Sima Tayser Aziz</a>
                             <a href="https://github.com/ghalialnfoury" target="_blank">Ghali Alnfoury</a>
-                            <a href="https://github.com/Ghya77h" target="_blank">Gias</a>
+                            <a href="https://github.com/Ghya77h" target="_blank">Ghyath Kaysiea</a>
                         </div>
                     </div>
                 </nav>
