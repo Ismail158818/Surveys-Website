@@ -351,12 +351,12 @@
                     <div class="developer-btn">
                         <a href="#" class="header-link">Developers</a>
                         <div class="developer-dropdown">
-                            <a href="https://github.com/Ismail158818" target="_blank">Mohamed Alaa Al-Den Namaa</a>
+                            <a href="https://github.com/MohamedEngineered242" target="_blank">Mohamed Alaa Al-Den Namaa</a>
+                            <a href="https://github.com/LaylaSN" target="_blank">Layla Sameh Nayyouf</a>
                             <a href="https://github.com/Ismail158818" target="_blank">Ismail Mahmoud Basbous</a>
-                            <a href="https://github.com/Ismail158818" target="_blank">Sima Tayser Aziz</a>
-                            <a href="https://github.com/Ismail158818" target="_blank">Layla Sameh Nayyouf</a>
-                            <a href="https://github.com/Ismail158818" target="_blank">Ghali Al Nefoury</a>
-                            <a href="https://github.com/Ismail158818" target="_blank">Gias</a>
+                            <a href="https://github.com/simaaziz888" target="_blank">Sima Tayser Aziz</a>
+                            <a href="https://github.com/ghalialnfoury" target="_blank">Ghali Alnfoury</a>
+                            <a href="https://github.com/Ghya77h" target="_blank">Ghyath Kaysiea</a>
                         </div>
                     </div>
             </nav>
