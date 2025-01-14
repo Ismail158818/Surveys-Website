@@ -482,7 +482,6 @@
             <div class="alert alert-success">
                 {{ session('success') }}
             </div>
-            
             @if(session('bestFactoryTime'))
                 <h2>Factory Analysis Results</h2>
                 <h3>Best Factory Based on Time</h3>
@@ -501,13 +500,11 @@
             @endif
         @endif
     </div>
-    
     <footer>
         <div class="container">
             <p class="mb-0">Contact us: +963936147908 | ismahel360@gmail.com</p>
         </div>
     </footer>
-
     <script>
         function toggleForm(formId) {
             const forms = document.querySelectorAll('.form-container');
@@ -515,23 +512,19 @@
                 form.style.display = form.id === formId ? (form.style.display === 'block' ? 'none' : 'block') : 'none';
             });
         }
-
         let questionIndex = 0;
-
         function openModal(modalId) {
             const modalOverlay = document.getElementById(modalId);
             const modal = modalOverlay.querySelector('.modal'); 
             modalOverlay.style.display = 'flex'; 
             modal.style.display = 'block'; 
         }
-
         function closeModal(modalId) {
             const modalOverlay = document.getElementById(modalId);
             const modal = modalOverlay.querySelector('.modal');
             modalOverlay.style.display = 'none'; 
             modal.style.display = 'none'; 
-        }
-
+        } 
         document.querySelectorAll('.modal-overlay').forEach(overlay => {
             overlay.addEventListener('click', function (e) {
                 if (e.target === overlay) {
@@ -539,7 +532,6 @@
                 }
             });
         });
-
         function addQuestion() {
             const container = document.getElementById('questions-container');
             const questionSet = document.createElement('div');
@@ -565,7 +557,6 @@
             container.appendChild(questionSet);
             questionIndex++;
         }
-
         function handleQuestionTypeChange(index, selectElement) {
             const answersContainer = document.getElementById(`answers-container-${index}`);
             if (selectElement.value === 'multi') {
@@ -576,7 +567,6 @@
                 answersContainer.innerHTML = ''; 
             }
         }
-
         function addAnswer(questionIndex) {
             const answersContainer = document.getElementById(`answers-container-${questionIndex}`);
             const answerCount = answersContainer.querySelectorAll('.form-group').length;
@@ -588,11 +578,9 @@
             `;
             answersContainer.appendChild(answerSet);
         }
-
         function removeQuestion(button) {
             button.parentElement.remove();
         }
-
         function loadRespondents(surveyId) {
             const respondentsDropdown = document.getElementById('respondentsSelection');
             respondentsDropdown.innerHTML = ''; 

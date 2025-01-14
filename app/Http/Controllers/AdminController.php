@@ -253,5 +253,11 @@ class AdminController extends Controller
             'bestDistance' => $bestDistance
         ]);
     }
+
 }
 }
+
+
+
+
+
